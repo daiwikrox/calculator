@@ -12,7 +12,7 @@ public class Daiwik
     private int x;
 
     public static void main (String [] args) {
-            Scanner sc = new Scanner (System.in);
+            /*Scanner sc = new Scanner (System.in);
             System.out.print("enter any number");
             int number1;
             int number2;
@@ -21,6 +21,51 @@ public class Daiwik
             number2 = sc.nextInt();
             int sum = number1+number2;
             System.out.print(sum);
+            */
+            String yesno = "y";
+           while (yesno.equals("y") || yesno.equals("Y")) {
+           Scanner b = new Scanner(System.in);
+           System.out.print("what operation?(+  -   *   /   ) ");
+           String s = b.nextLine();
+           System.out.print ("what is your first number ");
+           int number1 = b.nextInt();
+           System.out.print ("what is your second number ");
+           int number2 = b.nextInt ();
+           if(s.equals("+")) {
+               System.out.println("the required number is "+(number1+number2));
+               
+              
+            }
+           else if (s.equals("-")) {
+               System.out.println("the required number is "+(number1-number2));
+            }
+           else if(s.equals("*")) {
+              System.out.println("the required number is "+(number1*number2)); 
+            }
+           else if(s.equals("/")) {
+               System.out.println("the required number is"+(number1/number2));
+            }
+           else {
+               System.out.print("You idiot, type in the a valid sign!\n");
+            }
+            System.out.print("would you like to do another operation ? answer yes or no (y/n) ");
+            
+            yesno =  b.next();
+            
+            
+        }
+            
+           
+         
+         
+          System.out.print("Thanks for calculating!");
+        
+          
+           
+          
+           
+           
+           
             
             
         }

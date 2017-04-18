@@ -26,4 +26,22 @@ public class Discard
             
         }
     }
+    
+    public static void add() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What operation? (+,-,/,*)");
+        String s = scanner.nextLine();
+        System.out.print("What is your first number? ");
+        int number1 = scanner.nextInt();
+        System.out.print("What is your second number? ");
+        int number2 = scanner.nextInt();
+        if (s.equals("+")) {
+            System.out.print("Your number is: "+(number1+number2));
+        }
+        
+        /* if (5==6) {
+            code  
+        }
+        */
+    }
 }
