@@ -1,4 +1,4 @@
-
+/////
 /**
  * Write a description of class Daiwik here.
  *
@@ -58,9 +58,9 @@ public class Daiwik
            
          
          
-          System.out.print("Thanks for calculating!");
+          System.out.print("Thanks for calculating!/n");
         
-          
+          System.out.print("check out github.com and daiwikrox to see the structure of the program");
            
           
            
